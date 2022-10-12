@@ -51,7 +51,8 @@ layout = html.Div(
                            'left': '800px',
                            'top': '679px',
                            'background': '#341A20',
-                           'border-radius': '40px', }
+                           'border-radius': '40px'},
+                    id='id_total_hora_serie'
                 ),
                 dbc.Col(
                     style={
