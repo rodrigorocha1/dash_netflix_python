@@ -22,7 +22,7 @@ app.layout = html.Div(children=[
         dbc.Col([
             html.Div([
                 botao_grupo_ano.botao_grupo,
-            ], style={}),
+            ], style={'margin-top': '15px'}),
 
             html.Div(id='id_out_slider')
 

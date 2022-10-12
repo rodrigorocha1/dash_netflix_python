@@ -14,4 +14,5 @@ from dash_bootstrap_templates import ThemeChangerAIO
 botao_grupo = dcc.Slider(id='id_slider_ano',
                          step=None,
                          marks={i: str(i) for i in [2016, 2017, 2018, 2019, 2020, 2021, 2022]},
+                         value=2016
                          )
