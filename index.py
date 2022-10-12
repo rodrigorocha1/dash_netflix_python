@@ -22,7 +22,8 @@ app.layout = html.Div(children=[
         dbc.Col([
             html.Div([
                 botao_grupo_ano.botao_grupo,
-            ], style={'margin-top': '15px'}),
+            ], style={'padding': '30px',
+                      'font-size': '50px'}),
 
             html.Div(id='id_out_slider')
 
@@ -46,7 +47,7 @@ app.layout = html.Div(children=[
     Input('id_slider_ano', 'value')
 )
 def output(value):
-    return f'Selecionou: {value} Tipo {type(value)} ' if value is not None else ''
+    return f'Selecionou: {value} Tipo {type(value)} '
 
 
 @app.callback(Output("page-content", "children"),

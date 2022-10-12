@@ -27,7 +27,7 @@ cartao1 = dbc.Card(
                                'top': '110px',
                                'font-family': 'Inter',
                                'font-style': 'normal',
-                               'font-weightt': '400',
+                               'font-weight': '400px',
                                'font-size': '24px',
                                'line-height': '29px'
                                # 'color': '#FFFFFF'
