@@ -20,8 +20,11 @@ app.layout = html.Div(children=[
 
         ]),
         dbc.Col([
-            dcc.Location(id='slider_ano'),
-            botao_grupo_ano.botao_grupo
+            html.Div([
+                botao_grupo_ano.botao_grupo,
+            ], style={}),
+
+            html.Div(id='id_out_slider')
 
         ], style={'position': 'absolute',
                   'width': '1469px',
@@ -36,6 +39,14 @@ app.layout = html.Div(children=[
         ]),
     ])
 ], style={"padding": "0px"})
+
+
+@app.callback(
+    Output('id_out_slider', 'children'),
+    Input('id_slider_ano', 'value')
+)
+def output(value):
+    return f'Selecionou: {value} Tipo {type(value)} ' if value is not None else ''
 
 
 @app.callback(Output("page-content", "children"),
