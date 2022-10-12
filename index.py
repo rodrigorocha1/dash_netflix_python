@@ -22,10 +22,12 @@ app.layout = html.Div(children=[
         dbc.Col([
             html.Div([
                 botao_grupo_ano.botao_grupo,
-            ], style={'padding': '30px',
-                      'font-size': '50px'}),
 
-            html.Div(id='id_out_slider')
+
+            ]),
+            # 'margin-top': '15px' Margin Bottom (14px)
+            html.Div(id='id_out_slider',
+                     style={'position': 'absolute', 'top': '70px', 'margin-top': '15px'})
 
         ], style={'position': 'absolute',
                   'width': '1469px',
@@ -47,6 +49,7 @@ app.layout = html.Div(children=[
     Input('id_slider_ano', 'value')
 )
 def output(value):
+
     return f'Selecionou: {value} Tipo {type(value)} '
 
 
