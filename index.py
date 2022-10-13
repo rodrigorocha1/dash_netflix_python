@@ -25,9 +25,9 @@ app.layout = html.Div(children=[
 
             ], style={'position': 'absolute',
                       'width': '953px',
-                      'height': '78px',
+                      'height': '98px',
                       'left': '483px',
-                      'top': '15px',
+                      'top': '25px',
                       'border-radius': '0px'}),
 
             html.Div(id='id_out_slider',
@@ -38,8 +38,8 @@ app.layout = html.Div(children=[
                   'height': '78px',
                   'left': '269px',
                   'top': '192px',
-                  'box-shadow': '0px 4px 4px rgba(0, 0, 0, 0.25)',
-                  'border-radius': '0px', }),
+                  'border': '1px solid #CB2424',
+                  'border-radius': '40px'}),
 
         dbc.Col([
             html.Div(id="page-content")
